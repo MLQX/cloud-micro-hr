@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microhr-web" />
+        <module name="microhr-model" />
+        <module name="microhr-service" />
+        <module name="mailserver" />
+        <module name="microhr-mapper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="cloud-micro-hr" target="1.8" />
+      <module name="mailserver" target="1.8" />
+      <module name="microhr-mapper" target="1.8" />
+      <module name="microhr-model" target="1.8" />
+      <module name="microhr-service" target="1.8" />
+      <module name="microhr-web" target="1.8" />
+      <module name="microhrserver" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mailserver" options="-parameters" />
+      <module name="microhr-mapper" options="-parameters" />
+      <module name="microhr-model" options="-parameters" />
+      <module name="microhr-service" options="-parameters" />
+      <module name="microhr-web" options="-parameters" />
+      <module name="microhrserver" options="-parameters" />
+    </option>
+  </component>
+</project>

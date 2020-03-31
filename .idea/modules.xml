@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/cloud-micro-hr.iml" filepath="$PROJECT_DIR$/.idea/cloud-micro-hr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mailserver/mailserver.iml" filepath="$PROJECT_DIR$/mailserver/mailserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microhrserver/microhr-mapper/microhr-mapper.iml" filepath="$PROJECT_DIR$/microhrserver/microhr-mapper/microhr-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microhrserver/microhr-model/microhr-model.iml" filepath="$PROJECT_DIR$/microhrserver/microhr-model/microhr-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microhrserver/microhr-service/microhr-service.iml" filepath="$PROJECT_DIR$/microhrserver/microhr-service/microhr-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microhrserver/microhr-web/microhr-web.iml" filepath="$PROJECT_DIR$/microhrserver/microhr-web/microhr-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microhrserver/microhrserver.iml" filepath="$PROJECT_DIR$/microhrserver/microhrserver.iml" />
+    </modules>
+  </component>
+</project>
