@@ -5,6 +5,7 @@ import org.example.microhr.model.Politicsstatus;
 import org.example.microhr.model.Position;
 import org.example.microhr.service.PoliticsstatusService;
 
+import org.example.microhr.service.PositionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 
 @Service("politicsstatusService")
-public class PositionServiceImpl implements PoliticsstatusService {
+public class PositionServiceImpl implements PositionService {
     @Autowired
     PositionMapper positionMapper;
     public List<Position> getAllPositions() {

@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import sun.plugin.liveconnect.SecurityContextHelper;
 
 import java.util.Map;
 
@@ -31,7 +31,7 @@ public class HrInfoController {
     @PutMapping("/hr/info")
     public RespBean updateHr(@RequestBody Hr hr , Authentication authentication ){
         if (hrService.updateHr(hr) == 1){
-            SecurityContextHelper.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(hr, authentication.getCredentials(),authentication.getAuthorities()));
+            SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(hr, authentication.getCredentials(),authentication.getAuthorities()));
             return RespBean.ok("更新成功！");
         }
         return RespBean.error("更新失败！");
@@ -59,7 +59,7 @@ public class HrInfoController {
         if (hrService.updateUserface(url,id)==1) {
             Hr hr =(Hr) authentication.getPrincipal();
             hr.setUserface(url);
-            SecurityContextHelper.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(hr,authentication.getCredentials(),authentication.getAuthorities()));
+            SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(hr,authentication.getCredentials(),authentication.getAuthorities()));
             return RespBean.ok("更新成功", url);
 
 

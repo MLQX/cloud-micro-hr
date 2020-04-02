@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 
-public interface PositionService {
+    public interface PositionService {
 
     public List<Position> getAllPositions();
 

@@ -10,13 +10,5 @@ import java.util.List;
 
 public interface PoliticsstatusService {
 
-    public List<Position> getAllPositions();
-
-    public Integer addPosition(Position position) ;
-
-    public Integer updatePositions(Position position);
-
-    public Integer deletePositionById(Integer id);
-
-    public Integer deletePositionsByIds(Integer[] ids);
+    List<Politicsstatus> getAllPoliticsstatus();
 }
